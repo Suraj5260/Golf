@@ -11,6 +11,24 @@ html body {
 	width: 100%;
 }
 
+#cursor {
+	height: 20px;
+	width: 20px;
+	background-color: #95c11e;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 99;
+}
+#cursor-blur {
+	height: 500px;
+	width: 500px;
+	background-color: #96c11e2b;
+	border-radius: 50%;
+	position: fixed;
+	filter: blur(40px);
+	z-index: 9;
+}
+
 #nav {
 	position: fixed;
 	height: 145px;
@@ -53,10 +71,11 @@ html body {
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	z-index: 10;
 }
 
 #page1 h1 {
-	font-size: 140px;
+	font-size: 6rem;
 	font-weight: 900;
 	position: relative;
 }
@@ -65,8 +84,8 @@ html body {
 	content: "EAT.DRINK.PLAY.";
 	position: absolute;
 	color: black;
-	top: -6px;
-	left: -6px;
+	top: -0.4rem;
+	left: -0.4rem;
 	-webkit-text-stroke: 2px #95c11e;
 	z-index: -1;
 }
@@ -86,4 +105,50 @@ html body {
 #page2 {
 	height: 100vh;
 	width: 100%;
+	z-index: 10;
+}
+
+#scroller {
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollerIn {
+	display: inline-block;
+	white-space: nowrap;
+	animation-name: scroll;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+	display: inline-block;
+	font-size: 120px;
+	font-weight: 900;
+	font-family: "gilroy", sans-serif;
+	transition: scroll linear 0.5s;
+	margin-right: 10px;
+	color: transparent;
+	-webkit-text-stroke: 2px #95c11e;
+}
+
+#scroller h4:hover {
+	color: #95c11e;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
