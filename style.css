@@ -17,7 +17,8 @@ html body {
 	background-color: #95c11e;
 	border-radius: 50%;
 	position: fixed;
-	z-index: 9;
+	transition: all linear 0.1s;
+	z-index: 10;
 }
 #cursor-blur {
 	height: 500px;
@@ -26,6 +27,7 @@ html body {
 	border-radius: 50%;
 	position: fixed;
 	filter: blur(40px);
+	transition: all linear 0.5s;
 	z-index: 9;
 }
 
@@ -48,6 +50,12 @@ html body {
 #nav h4 {
 	text-transform: uppercase;
 	font-weight: 500;
+}
+
+#nav h4:hover {
+	color: #95c11e;
+	/* background-color: white; */
+	font-weight: 900;
 }
 
 #heroVid {
@@ -190,14 +198,14 @@ html body {
 }
 
 #cards-container {
-	background-color: red;
+	/* background-color: red; */
 	height: 60vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 80px;
 	position: relative;
-	z-index: 10;
+	z-index: 9;
 }
 .cards {
 	height: 80%;
