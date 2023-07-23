@@ -17,7 +17,8 @@ html body {
 	background-color: #95c11e;
 	border-radius: 50%;
 	position: fixed;
-	z-index: 9;
+	z-index: 99;
+	transition: all linear 0.1s;
 }
 #cursor-blur {
 	height: 500px;
@@ -276,4 +277,34 @@ html body {
 	height: 100%;
 	object-fit: cover;
 	width: 14%;
+}
+
+#page3 {
+	height: 100vh;
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+#page3 p {
+	font-size: 33px;
+	font-weight: 900;
+	line-height: 50px;
+	text-transform: uppercase;
+	width: 60%;
+	text-align: center;
+}
+#page3 img {
+	position: absolute;
+	height: 60px;
+}
+#page3 #colon1 {
+	top: 25%;
+	left: 15%;
+}
+#page3 #colon2 {
+	top: 65%;
+	left: 80%;
 }
