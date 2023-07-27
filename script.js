@@ -3,8 +3,8 @@ var crsrblr = document.querySelector("#cursor-blur");
 document.addEventListener("mousemove", function (dots) {
 	crsr.style.left = dots.x + "px";
 	crsr.style.top = dots.y + "px";
-	crsrblr.style.left = dots.x - 250 + "px";
-	crsrblr.style.top = dots.y - 250 + "px";
+	crsrblr.style.left = dots.x - 300 + "px";
+	crsrblr.style.top = dots.y - 300 + "px";
 });
 
 gsap.to("#nav", {
@@ -52,14 +52,14 @@ gsap.from("#about-us img , #about-us-in", {
 	y: 90,
 	opacity: 0,
 	duration: 1,
-	stagger: 0.4,
+	// stagger: 0.4,
 	scrollTrigger: {
 		trigger: "#about-us",
 		scroller: "body",
 		// markers: true,
 		start: "top 70%",
 		end: "top 65%",
-		scrub: 1,
+		scrub: 2,
 	},
 });
 
@@ -74,7 +74,7 @@ gsap.from(".cards", {
 		// markers: true,
 		start: "top 70%",
 		end: "top 65%",
-		scrub: 1,
+		scrub: 2,
 	},
 });
 
@@ -98,5 +98,16 @@ gsap.from("#colon2", {
 		start: "top 55%",
 		end: "top 45%",
 		scrub: 4,
+	},
+});
+
+gsap.from("#page4 h1", {
+	y: 50,
+	scrollTrigger: {
+		trigger: "#page4 h1",
+		scroller: "body",
+		start: "top 75%",
+		end: "top 70%",
+		scrub: 2,
 	},
 });
