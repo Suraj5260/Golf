@@ -18,16 +18,17 @@ html body {
 	border-radius: 50%;
 	position: fixed;
 	z-index: 99;
-	transition: all linear 0.1s;
+	/* transition: all linear 0.1s; */
 }
 #cursor-blur {
 	height: 500px;
 	width: 500px;
-	background-color: #83d41a56;
+	background-color: #83d41a36;
 	border-radius: 50%;
 	position: fixed;
 	filter: blur(40px);
 	z-index: 9;
+	transition: all linear 0.5s;
 }
 
 #nav {
