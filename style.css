@@ -49,12 +49,7 @@ html body {
 #nav h4 {
 	text-transform: uppercase;
 	font-weight: 500;
-}
-
-#nav h4:hover {
-	color: #95c11e;
-	/* background-color: white; */
-	font-weight: 900;
+	padding: 20px;
 }
 
 #heroVid {
@@ -375,27 +370,51 @@ html body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 30px;
+	gap: 25px;
 	position: relative;
 	z-index: 9;
 }
 
-#footer div {
-	height: 80%;
+#footer .footerCount {
+	height: 50%;
 	width: 20%;
 	overflow: hidden;
-	background-color: red;
-	position: relative;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
+	/* background-color: red; */
 }
 
-#footer #logo2 {
+#logo2 {
 	width: 50%;
 	height: 50%;
+	display: flex;
 }
 
 #logo2:hover {
 	transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#socials {
+	width: 100%;
+	height: 10vh;
+	position: relative;
+	display: flex;
+	gap: 15px;
+}
+
+#socials img {
+	width: 10%;
+	position: relative;
+}
+.info {
+	height: 100%;
+	width: 100%;
+}
+
+.info h1 {
+	font-size: 40px;
+	line-height: 150%;
+}
+
+.footerCount p {
+	width: 60%;
+	font-size: 27px;
 }

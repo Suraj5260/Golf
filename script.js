@@ -36,15 +36,17 @@ gsap.to("#main", {
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function (elem) {
 	elem.addEventListener("mouseenter", function () {
-		crsr.style.scale = 3;
-		crsr.style.border = "1px solid #fff";
+		crsr.style.scale = 5;
+		crsr.style.border = "0.5px solid #fff";
 		crsr.style.backgroundColor = "transparent";
 		crsr.style.zaxis = "99px";
+		// crsr.style.transition = " ease 0.1s ";
 	});
 	elem.addEventListener("mouseleave", function () {
 		crsr.style.scale = 1;
 		crsr.style.border = "0px solid #fff";
 		crsr.style.backgroundColor = "#95c11e";
+		crsr.style.transition = " ease 0.5s";
 	});
 });
 
