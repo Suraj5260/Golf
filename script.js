@@ -40,13 +40,13 @@ h4all.forEach(function (elem) {
 		crsr.style.border = "0.5px solid #fff";
 		crsr.style.backgroundColor = "transparent";
 		crsr.style.zaxis = "99px";
-		// crsr.style.transition = " ease 0.1s ";
+		// crsr.style.transition = " ease 0.01s ";
 	});
 	elem.addEventListener("mouseleave", function () {
 		crsr.style.scale = 1;
 		crsr.style.border = "0px solid #fff";
 		crsr.style.backgroundColor = "#95c11e";
-		crsr.style.transition = " ease 0.5s";
+		// crsr.style.transition = " ease 0.5s";
 	});
 });
 
