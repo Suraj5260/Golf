@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	font-family: "Montserrat";
 	color: #fff;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 html body {
@@ -446,6 +449,7 @@ body::-webkit-scrollbar-thumb {
 	width: 10%;
 	position: relative;
 }
+
 .info {
 	height: 100%;
 	width: 100%;
@@ -464,4 +468,21 @@ body::-webkit-scrollbar-thumb {
 
 .footerCount pre strong {
 	color: #000;
+}
+
+.footerHeads:hover {
+	color: #fff;
+	background-color: transparent;
+	-ms-user-select: none;
+}
+
+#Address {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+#Address:hover {
+	color: #fff;
+	background-color: transparent;
+	-ms-user-select: none;
 }
